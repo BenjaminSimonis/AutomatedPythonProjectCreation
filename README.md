@@ -43,5 +43,12 @@ source ~/.bashrc
 ## Usage
 
 ```bash
+# Create local python project without remote repository
 create $PROJECTNAME
+
+# Create python project with remote repository in GitHub
+create $PROJECTNAME gh
+
+# Create python project with remote repository in your GitLab
+create $PROJECTNAME gl
 ```
