@@ -27,7 +27,7 @@ function create() {
 
     mkdir $1
     cd $1
-    PROJECTPATH=$(pwd)
+    PROJECTPATH="$(pwd)"
 
     ### Project Structure Creation ###
     curl -o .gitignore https://raw.githubusercontent.com/github/gitignore/master/Python.gitignore
@@ -50,7 +50,7 @@ function create() {
     git commit -m "Initial commit"
 
     ### Create remote repository, if variable $2 is given
-    if [[ -z "$2"]]
+    if [[ -z "$2" ]]
     then
         cd $INITPATH
         python3 create.py $1 $2
