@@ -35,7 +35,7 @@ vim git_ini.sh
 
 chmod +x git_ini.sh
 
-echo 'alias create="/path/to/git_ini.sh"' >> ~/.bashrc
+echo 'alias create="source /path/to/git_ini.sh && create"' >> ~/.bashrc
 
 source ~/.bashrc
 ```
